@@ -1,0 +1,25 @@
+{
+  "zh": {
+    "docs": {
+      "version": "1.0.0",
+      "url": "https://github.com/dece-cash",
+      "show": false,
+      "description": [
+      ]
+    },
+    "dapps": {
+    }
+  },
+
+  "en": {
+    "docs": {
+      "version": "1.0.0",
+      "url": "https://github.com/dece-cash",
+      "show": false,
+      "description": [
+      ]
+    },
+    "dapps": {
+    }
+  }
+}
