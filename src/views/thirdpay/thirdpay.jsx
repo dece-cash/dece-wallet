@@ -39,7 +39,7 @@ class Form extends React.Component {
             gas:'0x0',
             gasPrice:'0x0',
             value:'0x0',
-            cy:'SERO',
+            cy:'DECE',
             data:'0x',
         },
     }
@@ -177,7 +177,7 @@ class Form extends React.Component {
         data.data=cachePayInfo.data;
         data.catg=cachePayInfo.catg;
         data.tkt=cachePayInfo.tkt;
-        data.feeCy = cachePayInfo.gasCy?cachePayInfo.gasCy:"SERO";
+        data.feeCy = cachePayInfo.gasCy?cachePayInfo.gasCy:"DECE";
         data.feeValue = cachePayInfo.feeValue?cachePayInfo.feeValue:null;
 
 
@@ -242,7 +242,7 @@ class Form extends React.Component {
 
         const {accountDetail,accountList,showAccount,cachePayInfo} = this.state;
 
-        let feeCy = "SERO";
+        let feeCy = "DECE";
         let fee = decimals.convert(new BigNumber(cachePayInfo.gas).multipliedBy(new BigNumber(cachePayInfo.gasPrice)).toString(10),feeCy);
 
         if(cachePayInfo.feeValue && cachePayInfo.gasCy){
@@ -255,8 +255,8 @@ class Form extends React.Component {
         return (
             <div>
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     // style={{background: "#f7f7f7"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={()=>{url.goBack()}}

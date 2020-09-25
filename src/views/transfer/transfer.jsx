@@ -75,7 +75,7 @@ class Form extends Component {
                 });
                 return
             }
-            if (this.props.currency === "SERO") {
+            if (this.props.currency === "DECE") {
                 if (new BigNumber(value["amount"]).plus(new BigNumber(defaultFee)).comparedTo(new BigNumber(that.props.amount)) === 1) {
                     Toast.fail(lang.e().toast.error.notEnough, 1.5)
                     that.setState({
@@ -89,7 +89,7 @@ class Form extends Component {
                     assetService.balanceOf(detail.tk).then(data=>{
                         if(data && typeof data === 'object'){
                             data.forEach((amount,cy)=>{
-                                if(cy ===  'SERO'){
+                                if(cy ===  'DECE'){
                                     if (new BigNumber(defaultFee).comparedTo(amount) === 1) {
                                         Toast.fail(lang.e().toast.error.notEnoughFee, 1.5)
                                         that.setState({
@@ -237,7 +237,7 @@ class Form extends Component {
                     <div className='title'>
                         <div className='left text-primary'>{lang.e().page.txTransfer.fee} </div>
                         <div className='right text-primary' style={{textAlign: 'right'}}>
-                            <span style={{fontSize: '14px'}}>{defaultFee} SERO</span><br/>
+                            <span style={{fontSize: '14px'}}>{defaultFee} DECE</span><br/>
                             <small className="text-primary">Gas(25000) * GasPrice(1Gta)</small>
                         </div>
                     </div>
@@ -250,7 +250,7 @@ class Form extends Component {
                         <div className='left text-primary'>{lang.e().page.txTransfer.total} </div>
                         <div className='right text-primary' style={{textAlign: 'right'}}>
                             {
-                                "SERO" === this.props.cy ? <div>
+                                "DECE" === this.props.cy ? <div>
                                     <span style={{
                                         fontSize: '14px',
                                         fontWeight: "bold"
@@ -263,7 +263,7 @@ class Form extends Component {
                                     <br/><span style={{
                                     fontSize: '14px',
                                     fontWeight: "bold"
-                                }}>+ {defaultFee}</span> SERO
+                                }}>+ {defaultFee}</span> DECE
                                 </div>
                             }
 
@@ -291,7 +291,7 @@ class Transfer extends Component {
 
         this.state = {
             amount: 0,
-            currency: 'SERO',
+            currency: 'DECE',
             current: '',
             detail: {}
         }
@@ -330,8 +330,8 @@ class Transfer extends Component {
         const {currency, detail, amount} = this.state;
         return <div style={{height: document.documentElement.clientHeight}}>
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 icon={<Icon type="left"/>}
                 onLeftClick={() => {
                     url.goBack();

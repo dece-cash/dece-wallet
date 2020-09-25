@@ -48,14 +48,13 @@ class Receive extends Component{
 
         return <div style={{height:document.documentElement.clientHeight}}>
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 icon={<Icon type="left"/>}
                 onLeftClick={() => {
                     // window.location.replace("/#/transfer/list");
                     url.goBack();
                 }}
-                // style={{backgroundColor:"#1d1f20"}}
             >
                 <span style={{color:"#fff"}}>{this.props.match.params.type==="pkr"?lang.e().page.wallet.PKr:lang.e().page.wallet.mainPKr}</span>
             </NavBar>
@@ -65,7 +64,7 @@ class Receive extends Component{
                     <Icon type={this.state.act.avatar} style={{width:"40px",height:"40px"}}/>
                 </div>
                 <div className="transfer-receive-header" >
-                    <strong className="text-primary">{this.state.act.name}</strong><br/>
+                    <strong>{this.state.act.name}</strong><br/>
                     <div className="transfer-receive-header-hash" onClick={()=>{
                         copy(this.state.pkr);
                         Toast.success(lang.e().toast.success.copy, 1);

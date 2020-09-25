@@ -19,16 +19,10 @@ class Settings extends Component {
         this.setState({
             network: [
                 {
-                    id: "2",
-                    network: "main",
-                    name: lang.e().page.setting.enNode,
-                    rpc: "https://f-sero-light-node.ririniannian.com",
-                },
-                {
                     id: "1",
                     network: "main",
-                    name: lang.e().page.setting.cnNode,
-                    rpc: "https://sero-light-node.ririniannian.com",
+                    name: lang.e().page.setting.enNode,
+                    rpc: "http://13.124.240.238:8545",
                 }
             ]
         })
@@ -87,8 +81,8 @@ class Settings extends Component {
         return <div style={{height: document.documentElement.clientHeight - 45}}>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={() => {
                         url.goBack()
@@ -103,7 +97,7 @@ class Settings extends Component {
                     <WhiteSpace size="lg"/>
                     <List>
                         <List.Item extra={
-                            <span style={{fontSize: "14px"}} className="text-dark">{lang.e().value}</span>
+                            <span style={{fontSize: "14px"}}>{lang.e().value}</span>
                         } arrow="horizontal"
                                    onClick={() => {
                                        Modal.operation([
@@ -139,17 +133,17 @@ class Settings extends Component {
                                            }
                                        ])
                                    }}
-                        ><span className="text-dark">{lang.e().page.setting.language}</span></List.Item>
+                        ><span >{lang.e().page.setting.language}</span></List.Item>
                     </List>
                     <WhiteSpace/>
                     <List>
                         <List.Item extra={
-                            <span style={{fontSize: "14px"}} className="text-dark">{config.seroRpcName()}</span>
+                            <span style={{fontSize: "14px"}}>{config.seroRpcName()}</span>
                         } arrow="horizontal" onClick={() => {
                             this.setState({
                                 showNetwork: true
                             })
-                        }}><span className="text-dark">{lang.e().page.setting.node}</span></List.Item>
+                        }}><span >{lang.e().page.setting.node}</span></List.Item>
 
 
                     </List>
@@ -157,7 +151,7 @@ class Settings extends Component {
                     <List>
                         <List.Item arrow="horizontal" onClick={() => {
                             url.goPage(url.HistoryPKr, url.Settings)
-                        }}><span className="text-dark">{lang.e().page.setting.pkr}</span></List.Item>
+                        }}><span >{lang.e().page.setting.pkr}</span></List.Item>
 
 
                     </List>

@@ -57,7 +57,7 @@ class WalletManager extends Component {
             tmpArray.push(
                 <WingBlank size="lg" key={i++}>
                     <WhiteSpace size="lg"/>
-                    <Card style={{backgroundImage:`url("./img/iconback.png")`}} className="card-background">
+                    <Card className="card-background">
                         <Card.Header
                             thumb={<div><Icon className="icon-avatar" type={detail.avatar} size="lg"/></div>}
                             title={<span>{detail.name}</span>}
@@ -108,8 +108,8 @@ class WalletManager extends Component {
         return <div style={{height: document.documentElement.clientHeight-45}}>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     rightContent={<Icon onClick={()=>{
                         // window.location.replace("/#/account/create1")

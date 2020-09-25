@@ -15,8 +15,8 @@ class Stake extends Component {
         return <Layout selectedTab="stake">
                 <div className="layout-top">
                     <NavBar
-                        mode="light"
-                        style={{background: "#1f1f1f"}}
+                        mode="dark"
+                        style={{background: "#294486"}}
                         leftContent={<Icon type="iconMenu"/>}
                         rightContent={<Icon type="iconscan"/>}
                     >

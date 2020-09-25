@@ -159,8 +159,8 @@ class Manage extends Component {
         return <div style={{height: document.documentElement.clientHeight-45}}>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={()=>{
                         // window.location.replace("/#/walletManage/")
@@ -199,7 +199,7 @@ class Manage extends Component {
                 <WingBlank>
                     <Button style={{color:'#009688'}} type="ghost" onClick={()=>{this.clearData()}}>{lang.e().button.repair}</Button>
                     <WhiteSpace size="lg"/>
-                    <Button style={{color:'red'}}  type="primary" onClick={()=>{this.removeAccount()}}>{lang.e().button.deleteAddress}</Button>
+                    <Button style={{color:'red'}}  type="ghost" onClick={()=>{this.removeAccount()}}>{lang.e().button.deleteAddress}</Button>
                 </WingBlank>
             </div>
         </div>

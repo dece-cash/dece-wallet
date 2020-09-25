@@ -16,7 +16,7 @@ const urls = [
         url: "https://github.com/pofid-dao/"
     }, {
         name: "Twitter",
-        value: "@SEROdotCASH",
+        value: "@DECEdotCASH",
         url: ""
     }, {
         name: "Wechat",
@@ -90,8 +90,8 @@ class AboutUs extends Component {
         return (
             <div>
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left" onClick={() => {
                         url.goBack()
                     }}/>}

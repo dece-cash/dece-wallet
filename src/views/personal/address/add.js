@@ -98,7 +98,7 @@ class Form extends React.Component {
                 <div style={{height:document.documentElement.clientHeight * 0.24,textAlign: "center"}}>
                     <img src="./img/black.png" width="100%"/>
                 </div>
-                <WhiteSpace size="lg"/>
+                {/*<WhiteSpace size="lg"/>*/}
                 <div>
                     {this.nameDecorator(
                         <TextareaItem
@@ -185,8 +185,8 @@ class AddressAdd extends Component {
         return <div style={{height: document.documentElement.clientHeight-45}}>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={()=>{
                         url.goBack()

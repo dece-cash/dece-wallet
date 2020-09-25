@@ -42,7 +42,7 @@ class ManageName extends Component {
 
     showChangeAvatar=()=>{
         let modalId ;
-        modalId = Modal.alert(lang.e().page.walletManage.changeProfilePhoto, <div><Grid data={data} hasLine={false} onClick={(o,i)=>{
+        modalId = Modal.alert(lang.e().page.walletManage.changeProfilePhoto, <div style={{height:document.documentElement.clientHeight*0.5,overflowY:"scroll"}}><Grid data={data} hasLine={false} onClick={(o,i)=>{
             const type = o.icon.props.type;
                 const detail = this.state.detail;
                 detail.avatar = type;
@@ -95,8 +95,8 @@ class ManageName extends Component {
         return <div style={{height: document.documentElement.clientHeight-45}}>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={()=>{
                         url.goBack();

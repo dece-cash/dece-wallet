@@ -1,7 +1,7 @@
 
 class Utils {
 
-    avatars = ['iconscientistavatar', 'icondog', 'iconsvg-', 'iconalienavatar', 'icontiger', 'iconavatar-', 'iconmonkey', 'iconmouse-', 'iconowl'];
+    avatars = ['iconavatar38','iconavatar27','iconavatar25','iconavatar11','iconavatar19','iconavatar12','iconavatar33','iconavatar02','iconavatar35','iconavatar08','iconavatar03','iconavatar24','iconavatar23','iconavatar26','iconavatar18','iconavatar06','iconavatar21','iconavatar01','iconavatar05','iconavatar15','iconavatar36','iconavatar32','iconavatar09','iconavatar39','iconavatar40','iconavatar07','iconavatar14','iconavatar34','iconavatar13','iconavatar10'];
 
     ellipsisAddress(address) {
         try {

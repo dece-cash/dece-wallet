@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {NavBar, TabBar, Icon} from 'antd-mobile'
 import './layout.css'
 import {storage, keys, config, url, baseDecimal, lang} from "../../config/common";
+import {shares,dapp,dece,dkrw,finple,HAPY,person,sero,sharesB,dappB,personB} from '../../icons/index';
 
 // const showDataVersion = ['1.0','1.1.4']
 
@@ -49,11 +50,11 @@ class Layout extends Component {
             {this.props.children}
 
             <div className="tabbar">
-                <TabBar barIntColor="#1e1f20" tintColor="#e5bb74" noRenderContent={true}>
+                <TabBar barIntColor="#294486" tintColor="#fff" noRenderContent={true}>
                     <TabBar.Item
-                        icon={<Icon type="iconzhanghuzichan"/>}
-                        selectedIcon={<Icon type="iconzhanghuzichan" className="text-primary"/>}
-                        title={<span>{lang.e().navbar.wallet}</span>}
+                        icon={<Icon type="iconzhanghuzichan" style={{color:"#fff"}} className="bar-icon"/>}
+                        selectedIcon={<Icon type="iconzhanghuzichan"  style={{color:"#1296db"}}  className="bar-icon"/>}
+                        title={<span className="bar-text">{lang.e().navbar.wallet}</span>}
                         key="home"
                         selected={this.props.selectedTab === 'home'}
                         onPress={()=>{
@@ -63,9 +64,9 @@ class Layout extends Component {
                     </TabBar.Item>
                     {
                         showDApp===true?<TabBar.Item
-                                icon={<Icon type="icontabbiaoqiancaidan"/>}
-                                selectedIcon={<Icon type="icontabbiaoqiancaidan" className="text-primary"/>}
-                                title={<span>{lang.e().navbar.dapp}</span>}
+                                icon={<img src={dappB} className="bar-icon"/>}
+                                selectedIcon={<img src={dapp} className="bar-icon"/>}
+                                title={<span className="bar-text">{lang.e().navbar.dapp}</span>}
                                 key="dapp"
                                 selected={this.props.selectedTab === 'dapp'}
                                 onPress={()=>{
@@ -75,9 +76,9 @@ class Layout extends Component {
 
                     }
                     <TabBar.Item
-                        icon={<Icon type="iconwode"/>}
-                        selectedIcon={<Icon type="iconwode" className="text-primary"/>}
-                        title={<span>{lang.e().navbar.my}</span>}
+                        icon={<img src={personB} className="bar-icon"/>}
+                        selectedIcon={<img src={person} className="bar-icon"/>}
+                        title={<span className="bar-text">{lang.e().navbar.my}</span>}
                         key="my"
                         selected={this.props.selectedTab === 'my'}
                         onPress={()=>{

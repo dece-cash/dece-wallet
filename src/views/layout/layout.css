@@ -14,5 +14,15 @@
 }
 
 .am-tab-bar-bar{
-    /*background: #1e1f20 !important;*/
+    height:70px
+}
+
+.bar-icon{
+    width: 32px;
+    height: 32px;
+}
+
+.bar-text{
+    color: #fff;
+    font-size: 16px;
 }

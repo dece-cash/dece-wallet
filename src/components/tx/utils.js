@@ -105,7 +105,7 @@ function genTxMap(root, hash, currency, txMap, type) {
                     block: block,
                     currency: cy,
                     value: new BigNumber(amount),
-                    // fee: decimals.convert(new BigNumber(txInfo.GasUsed?txInfo.GasUsed:txInfo.Gas).multipliedBy(txInfo.GasPrice), "SERO", 18),
+                    // fee: decimals.convert(new BigNumber(txInfo.GasUsed?txInfo.GasUsed:txInfo.Gas).multipliedBy(txInfo.GasPrice), "DECE", 18),
                     fee: new BigNumber(txInfo.GasUsed ? txInfo.GasUsed : txInfo.Gas).multipliedBy(txInfo.GasPrice),
                     gas: txInfo.Gas,
                     gasUsed: txInfo.GasUsed,
@@ -125,7 +125,7 @@ function sortTxMap(txMap) {
     txMap.forEach(function (tx, key, map) {
         if (new BigNumber(tx.value).isNegative()) {
             tx.type = "out";
-            if (tx.currency === "SERO") {
+            if (tx.currency === "DECE") {
                 tx.value = new BigNumber(tx.value).plus(tx.fee)
             }
         }

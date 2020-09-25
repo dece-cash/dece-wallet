@@ -117,7 +117,7 @@ class Transactions {
         let gas = tx.gas;
         let gasPrice = tx.gasPrice;
         let from = tx.from;
-        if (!cy) cy = "SERO"
+        if (!cy) cy = "DECE"
         if (!gas) {
             gas = "0x"+new BigNumber("4700000").toString(16);
         }
@@ -142,7 +142,7 @@ class Transactions {
         txReq.Gas=new BigNumber(gas).toString(16);
         txReq.GasPrice=new BigNumber(gasPrice).toString(16);
         txReq.SK = await act.getSK(password);
-        txReq.FeeCy = tx.feeCy?tx.feeCy:"SERO";
+        txReq.FeeCy = tx.feeCy?tx.feeCy:"DECE";
         txReq.BuyShare = tx.BuyShare;
         if(tx.feeValue){
             txReq.FeeValue = tx.feeValue;

@@ -52,7 +52,7 @@ class TransferDetail extends Component{
                 assetService.getPendingAndConfirming(current.tk).then(datas=>{
                     for(let d of datas){
                         if(hash === d.TxHash){
-                            d.Fee = decimals.convert(new BigNumber(d.GasUsed).multipliedBy(new BigNumber(d.GasPrice)),"SERO")
+                            d.Fee = decimals.convert(new BigNumber(d.GasUsed).multipliedBy(new BigNumber(d.GasPrice)),"DECE")
                             that.setState({
                                 txInfo:d,
                             })
@@ -149,7 +149,7 @@ class TransferDetail extends Component{
             assets.forEach(function (value,cy) {
                 let val = new BigNumber(decimals.convert(value,cy))
                 if (val.comparedTo(0) === -1) {
-                    if(cy === "SERO"){
+                    if(cy === "DECE"){
                         if(txInfo.Num!==99999999999){
                             if(val.plus(txInfo.Fee).comparedTo(0) === -1){
                                 val = val.plus(txInfo.Fee);
@@ -175,8 +175,8 @@ class TransferDetail extends Component{
 
         return <div style={{height:document.documentElement.clientHeight,opacity:"pending" === txInfo.State ||txInfo.isConfirm?0.5:1}} className="transfer-detail-bg">
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 icon={<Icon type="left"/>}
                 onLeftClick={() => {
                     // window.location.replace("/#/transfer/list");
@@ -188,7 +188,7 @@ class TransferDetail extends Component{
             </NavBar>
             <WhiteSpace size="lg"/>
             <WingBlank>
-                <div className="transfer-detail" style={{height:document.documentElement.clientHeight*0.8,background:"#d6b781"}}>
+                <div className="transfer-detail" style={{height:document.documentElement.clientHeight*0.8,background:"#fdfdfd"}}>
                     <div className="transfer-detail-indiv0">
 
                         <Icon type={txInfo.State === "pending"|| txInfo.isConfirm?"icondengdaichuli":"iconchenggongtishi"} size="lg" className="transfer-detail-indiv0-icon"/>
@@ -218,7 +218,7 @@ class TransferDetail extends Component{
                             </Flex.Item>
                             <Flex.Item style={{flexBasis: "50%"}} >
                                 <div>
-                                    <span>{new BigNumber(txInfo.Fee).toString(10)} SERO</span><br/>
+                                    <span>{new BigNumber(txInfo.Fee).toString(10)} DECE</span><br/>
                                     <span style={{fontSize:"10px",color:"#888"}}>=Gas({txInfo.GasUsed}) * GasPrice({new BigNumber(txInfo.GasPrice).dividedBy(new BigNumber(10).pow(9)).toString(10)} Gta)</span>
                                 </div>
                             </Flex.Item>

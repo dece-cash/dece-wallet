@@ -1,5 +1,5 @@
 .am-card {
-    background: #c0ad94;
+    background: #294486;
 }
 
 .tabbar {
@@ -18,20 +18,20 @@
 }
 
 .am-card-header-content {
-    color: #1f1f1f;
+    color: #fff;
 
 }
 
 .am-card-header-extra {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .am-card-body div {
-    color: #1f1f1f;
+    color: #fff;
 }
 
 .am-card-footer {
-    color: #1f1f1f;
+    color: #294486;
     font-weight: bold;
     font-size: 32px;
 }
@@ -52,16 +52,16 @@
 }
 
 .home-list-item-number {
-    color: #1f1f1f;
+    color: #294486;
     font-size: 16px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .am-list-item {
-    background: #000 !important;
+    background: #fff !important;
     border-radius: 5px;
 }
 
@@ -74,7 +74,7 @@
     overflow-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #fff;
+    color: #294486;
 }
 
 .am-list-item .am-list-line .am-list-extra {
@@ -106,6 +106,7 @@
     position: relative;
     top: 4px;
     margin-right: 5px;
+    color: #fff;
 }
 
 .icon-select-account-setting {

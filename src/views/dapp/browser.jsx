@@ -49,9 +49,9 @@ const operation = {
 
 
 let browserData = {
-    barColor:"#1f1f1f",
+    barColor:"#294486",
     barMode:"light",
-    navColor:"#1f1f1f",
+    navColor:"#294486",
     navMode:"light",
     navTitle:"Browser"
 }
@@ -67,7 +67,7 @@ class Browser extends Component {
             password: "",
             showTxInfo: false,
             txInfo: "",
-            barColor:"#1f1f1f",
+            barColor:"#294486",
             barMode:"light",
         }
     }
@@ -88,9 +88,9 @@ class Browser extends Component {
         const that = this;
 
         browserData = {
-            barColor:"#1f1f1f",
+            barColor:"#294486",
             barMode:"light",
-            navColor:"#1f1f1f",
+            navColor:"#294486",
             navMode:"light",
             navTitle:"Browser"
         }
@@ -288,7 +288,7 @@ class Browser extends Component {
                 return
             }
             if (data && !data.cy) {
-                data.cy = "SERO"
+                data.cy = "DECE"
             }
 
             if (data && !data.gas) {
@@ -310,7 +310,7 @@ class Browser extends Component {
                         <span>{decimals.convert(data.value, data.cy).toString(10)} {data.cy}</span>}>{lang.e().page.txDetail.amount}</List.Item>
                     <List.Item extra={<span>{data.data}</span>}>Data</List.Item>
                     <List.Item extra={<div>
-                        {decimals.convert(new BigNumber(data.gas).multipliedBy(new BigNumber(data.gasPrice)), "SERO").toString(10)}<br/>
+                        {decimals.convert(new BigNumber(data.gas).multipliedBy(new BigNumber(data.gasPrice)), "DECE").toString(10)}<br/>
                         <span style={{
                             fontSize: '12px',
                             color: "#ddd"
@@ -589,13 +589,13 @@ class Browser extends Component {
                             url.goBack();
 
                             if(plus && plus.navigator){
-                                plus.navigator.setStatusBarBackground("#1f1f1f");
+                                plus.navigator.setStatusBarBackground("#294486");
                                 plus.navigator.setStatusBarStyle("dark");
                             }
                             browserData = {
-                                barColor:"#1f1f1f",
+                                barColor:"#294486",
                                 barMode:"light",
-                                navColor:"#1f1f1f",
+                                navColor:"#294486",
                                 navMode:"light",
                                 navTitle:"Browser"
                             }

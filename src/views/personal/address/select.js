@@ -57,8 +57,8 @@ class AddressSelect extends Component {
         return <div>
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     onLeftClick={()=>{
                         url.goBack();

@@ -143,32 +143,32 @@ module.exports = function(webpackEnv) {
       }
       if (preProcessor === "less-loader") {
         loader.options.modifyVars = {
-          "@brand-primary": "#f4333c",
-          "@brand-primary-tap": "#FFFFFF",
+          "@brand-primary": "#294486",
+          "@brand-primary-tap": "#294486",
           "@brand-success": "#6abf47",
           "@brand-warning": "#ffc600",
           "@brand-error": "#f4333c",
           "@brand-important": "#ff5b05",
           "@brand-wait": "#1f1f1f",
 
-          "@color-text-base":"#FFFFFF",
+          "@color-text-base":"#000",
           "@color-text-base-inverse":"#fff",
           "@color-text-secondary":"#a4a9b0",
           "@color-text-placeholder":"#bbb",
           "@color-text-disabled":"#bbb",
-          "@color-text-caption":"#f7f7f7",
+          "@color-text-caption":"#888",
           "@color-text-paragraph":"#333",
           "@color-link":"@brand-primary",
 
-          "@fill-base":"#1f1f1f",
-          "@fill-body":"#1f1f1f",
-          "@fill-tap":"#5f5f5f",
+          "@fill-base":"#fff",
+          "@fill-body":"#f5f5f9",
+          "@fill-tap":"#ddd",
           "@fill-disabled":"#ddd",
           "@fill-mask":"rgba(0,0,0,0.4)",
-          "@color-icon-base":"#333",
-          "@fill-grey":"#888",
+          "@color-icon-base":"#ccc",
+          "@fill-grey":"#f7f7f7",
 
-          "@border-color-base":"#1f1f1f"
+          "@border-color-base":"#ddd"
 
 
         }

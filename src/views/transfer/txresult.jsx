@@ -31,8 +31,8 @@ class TxReult extends Component{
 
         return <div style={{height:document.documentElement.clientHeight}} className="transfer-detail-bg">
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 icon={<Icon type="left"/>}
                 onLeftClick={() => {
                     // window.location.replace("/#/transfer/list");
@@ -40,7 +40,7 @@ class TxReult extends Component{
                 }}
                 // style={{backgroundColor:"unset"}}
             >
-                SERO
+                DECE
             </NavBar>
             <WhiteSpace size="lg"/>
             <WingBlank>
@@ -73,7 +73,7 @@ class TxReult extends Component{
                             </Flex.Item>
                             <Flex.Item style={{flexBasis: "50%"}} >
                                 <div>
-                                    <span>{txInfo.fee} SERO</span><br/>
+                                    <span>{txInfo.fee} DECE</span><br/>
                                     <span style={{fontSize:"10px",color:"#888"}}>=Gas({txInfo.gas}) * GasPrice({new BigNumber(txInfo.gasPrice).dividedBy(new BigNumber(10).pow(9)).toString(10)} Gta)</span>
                                 </div>
                             </Flex.Item>

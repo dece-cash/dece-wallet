@@ -43,7 +43,7 @@ body {
 
 .am-tab-bar-bar{
     border-top: unset !important;
-    background-color: #1f1f1f !important;
+    background-color: #2a407d !important;
 }
 
 .icon-avatar{
@@ -65,6 +65,9 @@ body {
 .am-modal-transparent {
     width: 82% !important;
 }
+.am-list-body{
+    border-radius: 5px;
+}
 
 .am-list-body::before{
     background-color: unset !important;
@@ -79,26 +82,31 @@ body {
 }
 
 .am-list-item .am-list-line .am-list-content {
-    color: #fff !important;
+    color: #294486 !important;
 }
 
 .text-primary{
-    color: #f4333c
+    color: #2a407d
 }
 
 .text-second{
-    color: #f4333c
+    color: #2a407d
+}
+
+
+.text-icon{
+    color: #fff
 }
 
 span{
-    color:#fff
+    /*color:#fff*/
 }
 .text-dark{
     color: #fff
 }
 
 .card-background{
-    background-color: #000;
+    background-color: #2a407d;
     background-size: 150px;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -106,9 +114,14 @@ span{
 }
 
 .am-list-item .am-input-control input{
-    color: #fff
+    /*color: #fff*/
 }
 
 .am-action-sheet-share-list-item-icon{
-    background-color: #f4333c !important;
+    background-color: #2a407d !important;
+}
+
+.am-list-item img {
+    width: 36px !important;
+    height: 36px !important;
 }

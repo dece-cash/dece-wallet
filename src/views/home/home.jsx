@@ -12,9 +12,9 @@ import BigNumber from "bignumber.js";
 import {Price} from '../../components/tx/price';
 import {decimals} from "../../components/tx/decimals";
 import {assetService} from "../../components/service/service";
-import NONT from '../../icons/NONT.png';
-import HAPY from '../../icons/HAPY.png';
-import VERYBOOM from '../../icons/VERYBOOM.png';
+import {HAPY,browser,dapp,dece,dkrw,finple,person,sero} from '../../icons/index';
+
+// import VERYBOOM from '../../icons/VERYBOOM.png';
 
 const priceService = new Price();
 
@@ -245,12 +245,14 @@ class Home extends Component {
     }
 
     renLogo =(cy)=>{
-        if(cy === "NONT"){
-            return NONT
+        if(cy === "SERO"){
+            return sero
         }else if(cy === "HAPY"){
             return HAPY
-        }else if(cy === "VERYBOOM"){
-            return VERYBOOM
+        }else if(cy === "DKRW"){
+            return dkrw
+        }else if(cy === "FINPLE"){
+            return finple
         }
         return logo
     }
@@ -291,7 +293,7 @@ class Home extends Component {
                 assets.forEach(function (value, cy) {
                     let cyAmount = 0;
                     let amount = decimals.convert(value, cy);
-                    if (cy === "SERO") {
+                    if (cy === "DECE") {
                         if (that.state.seroPriceInfo.total) {
                             cyAmount = new BigNumber(decimals.convert(new BigNumber(that.state.seroPriceInfo.total).multipliedBy(new BigNumber(value)), cy));
                         }
@@ -343,7 +345,7 @@ class Home extends Component {
             }
 
             if (assetsArr.length === 0) {
-                const cy = "SERO"
+                const cy = "DECE"
                 const txNum  = tempConfirmMap.get(cy);
                 assetsArr.push(
                     <SwipeAction
@@ -371,7 +373,7 @@ class Home extends Component {
                                 </Brief>
                             </div>}
                               align="top"
-                              thumb={<div className="currency-icon-border"><img src={that.renLogo(cy)} width={16}/></div>}
+                              thumb={<div className="currency-icon-border"><img src={that.renLogo(cy)} width={32}/></div>}
                               multipleLine
                               onClick={() => {
                                   url.goPage(url.transferList(cy), url.Home);
@@ -428,8 +430,8 @@ class Home extends Component {
         return <Layout selectedTab="home">
             <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="iconMenu"/>}
                     rightContent={<Icon type="iconscan" onClick={
                         () => {
@@ -444,7 +446,7 @@ class Home extends Component {
                 </NavBar>
 
                 <div style={{margin: "5px"}}>
-                    <Card style={{backgroundImage:`url("./img/iconback.png")`}} className="card-background">
+                    <Card className="card-background">
                         <Card.Header
                             thumb={<div><Icon className="icon-avatar" type={current.avatar} size="lg" onClick={() => {
                                 url.goPage(url.manage(current.address), url.Home);
@@ -482,7 +484,7 @@ class Home extends Component {
                         </Card.Body>
                         {/*<Card.Footer extra={<span>{that.state.seroPriceInfo.type}{new BigNumber(seroTotal).toFixed(3)}</span>}/>*/}
                         <Card.Footer extra={<span>
-                            <span style={{fontSize:'14px'}}>Block Height: {healthData.latestBlock?healthData.latestBlock:0}</span>
+                            <span style={{fontSize:'14px',color:"#fff"}}>Block Height: {healthData.latestBlock?healthData.latestBlock:0}</span>
                             &nbsp;<Icon type="iconhelp" className="icon-pkr" onClick={() => {
                                 this.modalTips(lang.e().modal.blockHeight)
                             }}/>

@@ -18,7 +18,7 @@ class Config {
         this.host = {
             host: "http://popup.sero.cash/#/",
             // rpc: "http://sero-light-node.ririniannian.com:8545",
-            rpc: "https://sero-light-node.ririniannian.com",
+            rpc: "http://13.124.240.238:8545",
             price: "",
 
         }
@@ -51,11 +51,7 @@ class Config {
         if (seroRpcHost) {
             this.host.rpc = seroRpcHost;
         }else{
-            if(!this.isZH()){
-                this.host.rpc = "https://f-sero-light-node.ririniannian.com"
-            }else{
-                this.host.rpc = "https://sero-light-node.ririniannian.com"
-            }
+            this.host.rpc = "http://13.124.240.238:8545"
         }
 
     }
@@ -77,11 +73,7 @@ class Config {
     seroRpcName() {
         let v = storage.get(keys.settings.seroRpcName)
         if (!v) {
-            if(!this.isZH()){
-                return lang.e().page.setting.enNode;
-            }else{
-                return lang.e().page.setting.cnNode;
-            }
+            return lang.e().page.setting.enNode;
         } else {
             return v
         }

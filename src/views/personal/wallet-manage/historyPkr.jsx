@@ -88,8 +88,8 @@ class HistoryPkr extends Component{
             <div>
                 <div className="layout-top">
                 <NavBar
-                    mode="light"
-                    style={{background: "#1f1f1f"}}
+                    mode="dark"
+                    style={{background: "#294486"}}
                     leftContent={<Icon type="left" onClick={() => {
                         url.goBack()
                     }}/>}
@@ -111,7 +111,7 @@ class HistoryPkr extends Component{
                     <h2 style={{textAlign:"center"}} className="text-primary">Synchronized data log</h2>
                 </div>
                 <div style={{height:document.documentElement.clientHeight*0.6,overflowY: 'scroll'}}>
-                    <div id={"log"} style={{background:"#d6b781",color:"#1f1f1f"}} >
+                    <div id={"log"} style={{background:"#000",color:"#fff"}} >
 
                     </div>
                 </div>

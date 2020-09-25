@@ -40,7 +40,7 @@ class Personal extends Component {
     render() {
         return <Layout selectedTab="my">
             <div style={{textAlign: 'center'}}>
-                <div className="my-header" style={{"height": document.documentElement.clientHeight * 0.20, padding: "30px 0px"}}>
+                <div className="my-header" style={{"height": document.documentElement.clientHeight * 0.20,marginBottom:"30px"}}>
                     <img src="./img/black.png" style={{width:"100%"}}/>
                 </div>
                 <WhiteSpace size="lg"/>
@@ -76,24 +76,24 @@ class Personal extends Component {
 
                         </List>
                     </div>
-                    <WhiteSpace/>
-                    <div>
-                        <List>
-                            <List.Item arrow="horizontal" thumb={<Icon type="iconfaq" color="gray"/>} onClick={()=>{
-                                url.goPage(url.browser(this.state.helpUrl),url.Personal)
-                            }}><span >{lang.e().page.my.help}</span></List.Item>
+                    {/*<WhiteSpace/>*/}
+                    {/*<div>*/}
+                    {/*    <List>*/}
+                    {/*        <List.Item arrow="horizontal" thumb={<Icon type="iconfaq" color="gray"/>} onClick={()=>{*/}
+                    {/*            url.goPage(url.browser(this.state.helpUrl),url.Personal)*/}
+                    {/*        }}><span >{lang.e().page.my.help}</span></List.Item>*/}
 
-                        </List>
-                    </div>
-                    <WhiteSpace/>
-                    <div>
-                        <List>
-                            <List.Item arrow="horizontal" thumb={<Icon type="iconaboutus" color="gray"/>} onClick={()=>{
-                                url.goPage(url.About,url.Personal)
-                            }}><span >{lang.e().page.my.about}</span></List.Item>
-                        </List>
-                    </div>
-                    <WhiteSpace/>
+                    {/*    </List>*/}
+                    {/*</div>*/}
+                    {/*<WhiteSpace/>*/}
+                    {/*<div>*/}
+                    {/*    <List>*/}
+                    {/*        <List.Item arrow="horizontal" thumb={<Icon type="iconaboutus" color="gray"/>} onClick={()=>{*/}
+                    {/*            url.goPage(url.About,url.Personal)*/}
+                    {/*        }}><span >{lang.e().page.my.about}</span></List.Item>*/}
+                    {/*    </List>*/}
+                    {/*</div>*/}
+                    {/*<WhiteSpace/>*/}
 
                 </WingBlank>
 

@@ -164,8 +164,8 @@ class AccountCreate extends Component {
 
         return <div style={{height: document.documentElement.clientHeight}}>
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 icon={<Icon type="left"/>}
                 onLeftClick={() => {
                     url.goBack();

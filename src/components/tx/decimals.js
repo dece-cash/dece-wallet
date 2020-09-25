@@ -11,7 +11,7 @@ class Decimals {
 
     get(currency) {
         let decimal = 18;
-        if("SERO" === currency){
+        if("DECE" === currency){
         }else{
             decimal = storage.get(keys.decimalsKey(currency));
             if (!decimal && decimal !== 0) {

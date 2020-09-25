@@ -83,8 +83,8 @@ class Form extends React.Component {
             <div>
                 <div className="layout-top">
                     <NavBar
-                        mode="light"
-                        style={{background: "#1f1f1f"}}
+                        mode="dark"
+                        style={{background: "#294486"}}
                         leftContent={lang.e().button.cancel}
                         onLeftClick={()=>{
                             url.goBack();

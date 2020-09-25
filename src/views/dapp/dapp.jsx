@@ -56,7 +56,7 @@ class DApp extends Component {
         setTimeout(()=>{
             try{
                 if(plus && plus.navigator){
-                    plus.navigator.setStatusBarBackground("#1f1f1f");
+                    plus.navigator.setStatusBarBackground("#294486");
                     plus.navigator.setStatusBarStyle("light");
                 }
             }catch (e) {
@@ -155,7 +155,7 @@ class DApp extends Component {
             </div>
 
             <div style={{padding:'45px 0 60px',overflow:'scroll'}} >
-                <div className="sub-title text-primary">{lang.e().page.dapp.popup} </div>
+                {/*<div className="sub-title text-primary">{lang.e().page.dapp.popup} </div>*/}
                 <div style={{textAlign: 'center'}}>
                     <Grid data={popupData} activeStyle={false}  onClick={
                         (e,index)=>{
@@ -164,14 +164,14 @@ class DApp extends Component {
                     } hasLine={false}/>
                 </div>
 
-                <div className="sub-title text-primary">{lang.e().page.dapp.recommended} </div>
-                <div style={{textAlign: 'center'}}>
-                    <Grid data={data} activeStyle={false} style={{height:document.documentElement.clientHeight*0.3}} onClick={
-                        (e,index)=>{
-                            this.showModal(e,true)
-                        }
-                    } hasLine={false}/>
-                </div>
+                {/*<div className="sub-title text-primary">{lang.e().page.dapp.recommended} </div>*/}
+                {/*<div style={{textAlign: 'center'}}>*/}
+                {/*    <Grid data={data} activeStyle={false} style={{height:document.documentElement.clientHeight*0.3}} onClick={*/}
+                {/*        (e,index)=>{*/}
+                {/*            this.showModal(e,true)*/}
+                {/*        }*/}
+                {/*    } hasLine={false}/>*/}
+                {/*</div>*/}
 
                 <div>
                     {

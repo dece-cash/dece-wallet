@@ -5,7 +5,7 @@ import {validPkr} from "jsuperzk/dist/wallet/wallet"
 
 window.barcode = null;
 var scanType;
-var cy = "SERO";
+var cy = "DECE";
 
 function onmarked(type, result) {
     window.barcode.close();
@@ -72,8 +72,8 @@ class Scanner extends Component{
     render() {
         return <div>
             <NavBar
-                mode="light"
-                style={{background: "#1f1f1f"}}
+                mode="dark"
+                style={{background: "#294486"}}
                 leftContent={<Icon type="left"/>}
                 onLeftClick={()=>{
                     window.barcode.close();

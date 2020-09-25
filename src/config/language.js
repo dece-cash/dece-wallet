@@ -97,7 +97,7 @@ class Language {
                 accountExisted: "The account has existed!",
                 notEnough: "The balance is not enough!",
                 passwordError: "Password is incorrect!",
-                notEnoughFee: "Not enough SERO to pay gas fee !",
+                notEnoughFee: "Not enough DECE to pay gas fee !",
                 invalidMnemonic: "Invalid Mnemonic!",
                 clearData:"Cleanup failed, please try again later!",
                 useFrom:"Please use the designated account to initiate payment!"
@@ -114,12 +114,12 @@ class Language {
             clearData: "Clear app data",
             confirmClear: "Please confirm that you have backed up your account. Cleared will resynchronize transaction data",
             clearTip: 'Click "Confirm" to start syncing data. There may be a white screen during the process. Please wait patiently for data synchronization to complete, do not end the process easily.',
-            blockHeight:'For asset security, 12 blocks behind the main chain',
+            blockHeight:'The assets need 12 blocks confirmed',
 
             dappTip1: "You are visiting a third-party DApp",
 
             dappTip2: "You are about to visit an application developed by a third party . Please read carefully [",
-            dappTip3: "Potential risks of DApp and SERO Foundation's Disclaimers",
+            dappTip3: "Potential risks of DApp and DECE Foundation's Disclaimers",
             dappTip4: "]",
             haveRead: "I have read it ",
         },
@@ -159,7 +159,7 @@ class Language {
                 balance: "Balance",
                 address: "Address",
                 inputAmount: "Input Amount",
-                inputAddress: "Please Input SERO Address",
+                inputAddress: "Please Input DECE Address",
                 fee: "Fee",
                 total: "Total",
                 amount: "Amount",
@@ -204,7 +204,7 @@ class Language {
             create: {
                 import: "Import",
                 step1: {
-                    title: "Create SERO Wallet",
+                    title: "Create DECE Wallet",
                     walletName: "Wallet Name",
                     password: "Password",
                     rePassword: "Repeat Password",
@@ -342,7 +342,7 @@ class Language {
                 accountExisted: "账户存在!",
                 notEnough: "余额不足!",
                 passwordError: "密码不正确!",
-                notEnoughFee: "没有足够的SERO支付矿工费用",
+                notEnoughFee: "没有足够的DECE支付矿工费用",
                 invalidMnemonic: "无效的助记词!",
                 clearData:"正在同步区块，清除失败，请稍后再试!",
                 useFrom:"请使用指定的账户发起支付!"
@@ -363,7 +363,7 @@ class Language {
             blockHeight:'为了资产的安全性，钱包同步的区块比主链落后了12个区块',
             dappTip1:"你正在访问第三方DApp",
             dappTip2:"你将要访问的应用程序完全由第三方开发，请认真阅读【",
-            dappTip3:"去中心化应用的可能风险以及SERO基金会的免责条款",
+            dappTip3:"去中心化应用的可能风险以及DECE基金会的免责条款",
             dappTip4:"】",
             haveRead: "已经阅读 ",
 
@@ -590,7 +590,7 @@ class Language {
                 accountExisted: "アカウントは既に存在します！",
                 notEnough: "バランスが十分ではありません！",
                 passwordError: "間違ったパスワード！",
-                notEnoughFee: "料金を支払うのに十分なSEROがありません！",
+                notEnoughFee: "料金を支払うのに十分なDECEがありません！",
                 invalidMnemonic: "無効なニーモニック!",
                 clearData:"クリーンアップに失敗しました。しばらくしてからもう一度お試しください!",
                 useFrom:"指定されたアカウントを使用して支払いを開始してください!"
@@ -611,7 +611,7 @@ class Language {
             dappTip1: "サードパーティのDAppにアクセスしています",
 
             dappTip2: "サードパーティが開発したアプリケーションにアクセスしようとしています。よくお読みください[",
-            dappTip3: "DAppとSERO Foundationの免責事項の潜在的なリスク",
+            dappTip3: "DAppとDECE Foundationの免責事項の潜在的なリスク",
             dappTip4: "]",
             haveRead: "読みましたhave",
         },
@@ -651,7 +651,7 @@ class Language {
                 balance: "バランス",
                 address: "住所を",
                 inputAmount: "入力量",
-                inputAddress: "SEROアドレスを入力してください",
+                inputAddress: "DECEアドレスを入力してください",
                 fee: "料金",
                 total: "合計",
                 amount: "量",
@@ -696,7 +696,7 @@ class Language {
             create: {
                 import: "インポート",
                 step1: {
-                    title: "SEROウォレットを作成",
+                    title: "DECEウォレットを作成",
                     walletName: "ウォレット名",
                     password: "パスワード",
                     rePassword: "パスワードを再度入力してください",
@@ -835,7 +835,7 @@ class Language {
                 accountExisted: "Аккаунт уже существует!",
                 notEnough: "Баланса недостаточно!",
                 passwordError: "Неверный пароль!",
-                notEnoughFee: "Недостаточно SERO для оплаты платы за газ!",
+                notEnoughFee: "Недостаточно DECE для оплаты платы за газ!",
                 invalidMnemonic: "Няправільны мнеманічны характар !",
                 clearData:"Уборка не атрымалася. Паспрабуйце яшчэ раз пазней!",
                 useFrom:"Калі ласка, выкарыстоўвайце пазначаны ўліковы запіс, каб пачаць аплату!"
@@ -856,7 +856,7 @@ class Language {
             dappTip1: "Вы атрымліваеце доступ да старонняга DApp",
 
             dappTip2: "Вы збіраецеся наведаць прыкладанне, распрацаванае трэцім бокам. Калі ласка, уважліва прачытайце [",
-            dappTip3: "патэнцыйныя рызыкі адмовы ад фонду DApp і фонду SERO",
+            dappTip3: "патэнцыйныя рызыкі адмовы ад фонду DApp і фонду DECE",
             dappTip4: "]",
             haveRead: "Я прачытаў",
         },
@@ -896,7 +896,7 @@ class Language {
                 balance: "Остаток средств",
                 address: "Адрес",
                 inputAmount: "Сумма ввода",
-                inputAddress: "Пожалуйста, введите адрес SERO",
+                inputAddress: "Пожалуйста, введите адрес DECE",
                 fee: "сборы",
                 total: "весь",
                 amount: "сумма",
@@ -943,7 +943,7 @@ class Language {
             create: {
                 import: "импорт",
                 step1: {
-                    title: "Создать SERO Кошелек",
+                    title: "Создать DECE Кошелек",
                     walletName: "Название кошелька",
                     password: "пароль",
                     rePassword: "Повторите пароль",
@@ -1082,7 +1082,7 @@ class Language {
                 accountExisted: "계정이 이미 존재합니다!",
                 notEnough: "균형이 충분하지 않습니다!",
                 passwordError: "비밀번호가 맞지 않습니다!",
-                notEnoughFee: "SERO는 가스를 지불하기에 충분하지 않습니다수수료!",
+                notEnoughFee: "DECE는 가스를 지불하기에 충분하지 않습니다수수료!",
                 invalidMnemonic: "잘못된 니모닉 !",
                 clearData:"정리에 실패했습니다. 나중에 다시 시도하십시오!",
                 useFrom:"결제를 시작하려면 지정된 계정을 사용하십시오!"
@@ -1099,11 +1099,11 @@ class Language {
             clearData:"명확한 앱 데이터",
             confirmClear:"계정을 백업했는지 확인하십시오. 앱 데이터를 지운 후 트랜잭션 데이터가 다시 동기화됩니다.",
             clearTip:'"확인"을 클릭하여 데이터 동기화를 시작하십시오. 처리하는 동안 흰색 화면이 표시 될 수 있습니다. 데이터 동기화가 완료 될 때까지 기다리십시오. 프로세스를 갑자기 종료하지 마십시오.',
-            blockHeight:'자산 보안을 위해 메인 체인 뒤 12 블록',
+            blockHeight:'자산은 확인 된 12 개의 블록이 필요합니다',
             dappTip1 : "타사 DApp에 액세스하고 있습니다",
 
             dappTip2 : "타사에서 개발 한 응용 프로그램을 방문하려고합니다. 을 (를)주의 깊게 읽으십시오[",
-            dappTip3 : "DApp 및 SERO Foundation의 고지 사항의 잠재적 위험",
+            dappTip3 : "DApp 및 DECE Foundation의 고지 사항의 잠재적 위험",
             dappTip4 : "]",
             haveRead : "읽었습니다.",
         },
@@ -1143,7 +1143,7 @@ class Language {
                 balance: "균형",
                 address: "주소",
                 inputAmount: "입력 금액",
-                inputAddress: "SERO 주소를 입력하십시오",
+                inputAddress: "DECE 주소를 입력하십시오",
                 fee: "수수료",
                 total: "합계",
                 amount: "양",
@@ -1188,7 +1188,7 @@ class Language {
             create: {
                 import: "가져오기",
                 step1: {
-                    title: "SERO Wallet 생성",
+                    title: "DECE Wallet 생성",
                     walletName: "지갑 이름",
                     password: "암호",
                     rePassword: "암호 반복",

@@ -103,7 +103,7 @@ class Embed {
             return
         }
         if (data && !data.cy) {
-            data.cy = "SERO"
+            data.cy = "DECE"
         }
 
         if (data && !data.gas) {
