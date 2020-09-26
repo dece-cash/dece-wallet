@@ -68,7 +68,7 @@ class TransferDetail extends Component{
 
     async getTxState(){
         let hash = this.props.match.params.hash;
-        const data = await jsonRpc.seroRpcAsync("sero_getTransactionReceipt",[hash]);
+        const data = await jsonRpc.seroRpcAsync("dece_getTransactionReceipt",[hash]);
 
         const rest = data.result;
         let txState = '';
@@ -79,7 +79,7 @@ class TransferDetail extends Component{
                 txState=<Tag>{lang.e().page.txDetail.contractFailed}</Tag>
             }
         }
-        const txRest = await jsonRpc.seroRpcAsync("sero_getTransactionByHash",[hash]);
+        const txRest = await jsonRpc.seroRpcAsync("dece_getTransactionByHash",[hash]);
 
         const txInfo = txRest.result;
 
@@ -104,7 +104,7 @@ class TransferDetail extends Component{
             const tos = [];
 
             if(!cmdType){
-                if(txInfo.stx.Tx1.Outs_P){
+                if(txInfo.stx.Tx1 && txInfo.stx.Tx1.Outs_P){
                     for(let i=0;i<txInfo.stx.Tx1.Outs_P.length;i++){
                         let to = hexToBase58(txInfo.stx.Tx1.Outs_P[i].PKr);
                         if(txInfo.from !== to){
@@ -113,7 +113,7 @@ class TransferDetail extends Component{
                     }
                 }
 
-                if(txInfo.stx.Tx1.Outs_C){
+                if(txInfo.stx.Tx1 && txInfo.stx.Tx1.Outs_C){
                     for(let i=0;i<txInfo.stx.Tx1.Outs_C.length;i++){
                         let to = hexToBase58(txInfo.stx.Tx1.Outs_C[i].PKr);
                         if(txInfo.from !== to){

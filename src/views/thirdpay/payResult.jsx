@@ -33,7 +33,7 @@ class PayResult extends Component{
     getTxState(){
         const that = this;
         const hash = this.props.match.params.hash;
-        jsonRpc.seroRpc("sero_getTransactionReceipt",[hash],function (data) {
+        jsonRpc.seroRpc("dece_getTransactionReceipt",[hash],function (data) {
             const rest = data.result;
             if(rest){
                 if(new BigNumber(rest.status).comparedTo(0) === 1){

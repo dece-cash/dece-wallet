@@ -1,8 +1,8 @@
 {
   "zh": {
     "docs": {
-      "version": "1.0.0",
-      "url": "https://github.com/dece-cash",
+      "version": "1.0.1",
+      "url": "https://dece-cash.github.io/dece-wallet/version.json",
       "show": false,
       "description": [
       ]
@@ -13,8 +13,8 @@
 
   "en": {
     "docs": {
-      "version": "1.0.0",
-      "url": "https://github.com/dece-cash",
+      "version": "1.0.1",
+      "url": "https://dece-cash.github.io/dece-wallet/version.json",
       "show": false,
       "description": [
       ]

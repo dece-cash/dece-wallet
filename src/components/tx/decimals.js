@@ -19,7 +19,7 @@ class Decimals {
                 const resp =httpprovider.send({
                     "id": 0,
                     "jsonrpc": "2.0",
-                    "method": "sero_getDecimal",
+                    "method": "dece_getDecimal",
                     "params": [currency]
                 });
                 if (resp.error) {

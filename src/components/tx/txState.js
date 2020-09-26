@@ -7,7 +7,7 @@ class TxState {
     }
 
     getAnchor(roots) {
-        const resp = this.httpprovider.send({ "id": 0, "jsonrpc": "2.0", "method": "sero_getAnchor", "params": [roots] });
+        const resp = this.httpprovider.send({ "id": 0, "jsonrpc": "2.0", "method": "dece_getAnchor", "params": [roots] });
         if (utils.isNotNull(resp.error)) {
             throw new Error(resp.error.message);
         } else {
