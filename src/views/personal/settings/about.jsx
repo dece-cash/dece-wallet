@@ -8,21 +8,18 @@ import WhiteSpace from "antd-mobile/es/white-space";
 const urls = [
     {
         name: "Website",
-        value: "https://pofid.com",
-        url: "https://pofid.com"
+        value: "",
+        url: ""
     }, {
         name: "GitHub",
-        value: "https://github.com/pofid-dao/",
-        url: "https://github.com/pofid-dao/"
+        value: "",
+        url: ""
     }, {
         name: "Twitter",
-        value: "@DECEdotCASH",
+        value: "",
         url: ""
-    }, {
-        name: "Wechat",
-        value: "@SERO9413",
-        url: ""
-    }]
+    }
+    ]
 
 class AboutUs extends Component {
 
@@ -30,7 +27,7 @@ class AboutUs extends Component {
         super(props);
 
         this.state = {
-            version:"1.0.0"
+            version:"1.0.1"
         }
     }
 
@@ -99,15 +96,15 @@ class AboutUs extends Component {
                     {lang.e().page.my.about}
                 </NavBar>
                 <div>
-                    <div className="my-header" style={{"height": document.documentElement.clientHeight * 0.22, padding: "30px 0px"}}>
+                    <div className="my-header">
                         <img src="./img/black.png" style={{width:"100%"}}/>
                     </div>
                     <WingBlank>
+                        <WhiteSpace size="lg"/>
                     <List>
                         {abouts}
                         <div>
-                            <WhiteSpace/>
-                            <List.Item key={i++} arrow="horizontal" extra={<span className="text-dark">{this.state.version}</span>}>Version</List.Item>
+                            <List.Item key={i++} arrow="horizontal" extra={<span>{this.state.version}</span>}>Version</List.Item>
                         </div>
                     </List>
                     </WingBlank>

@@ -85,15 +85,15 @@ class Personal extends Component {
 
                     {/*    </List>*/}
                     {/*</div>*/}
-                    {/*<WhiteSpace/>*/}
-                    {/*<div>*/}
-                    {/*    <List>*/}
-                    {/*        <List.Item arrow="horizontal" thumb={<Icon type="iconaboutus" color="gray"/>} onClick={()=>{*/}
-                    {/*            url.goPage(url.About,url.Personal)*/}
-                    {/*        }}><span >{lang.e().page.my.about}</span></List.Item>*/}
-                    {/*    </List>*/}
-                    {/*</div>*/}
-                    {/*<WhiteSpace/>*/}
+                    <WhiteSpace/>
+                    <div>
+                        <List>
+                            <List.Item arrow="horizontal" thumb={<Icon type="iconaboutus" color="gray"/>} onClick={()=>{
+                                url.goPage(url.About,url.Personal)
+                            }}><span >{lang.e().page.my.about}</span></List.Item>
+                        </List>
+                    </div>
+                    <WhiteSpace/>
 
                 </WingBlank>
 

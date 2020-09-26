@@ -10,8 +10,8 @@ class Language {
                 storage.set(keys.settings.language, "zh_CN")
                 return this.zh_CN;
             } else {
-                storage.set(keys.settings.language, "en_US")
-                return this.en_US;
+                storage.set(keys.settings.language, "ko_KR")
+                return this.ko_KR;
             }
         } else {
             if (tLang === "en_US") {

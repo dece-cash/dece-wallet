@@ -24,7 +24,7 @@ class Config {
         }
 
         this.moneyType = "USD"
-        this.language = "en_US"
+        this.language = "ko_KR"
     }
 
     init() {
@@ -42,8 +42,8 @@ class Config {
                 storage.set(keys.settings.language, "zh_CN")
                 this.language = "zh_CN";
             } else {
-                storage.set(keys.settings.language, "en_US")
-                this.language = "en_US"
+                storage.set(keys.settings.language, "ko_KR")
+                this.language = "ko_KR"
             }
         }
 
