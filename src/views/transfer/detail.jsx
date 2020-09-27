@@ -320,9 +320,9 @@ class TransferDetail extends Component{
                     </div>
                 </div>
             </WingBlank>
-            <p className="transfer-detail-p"><a onClick={()=>{
-                url.goPage(url.browser(`https://explorer.sero.cash/txsInfo.html?hash=${txInfo.BlockHash}`), url.transferDetail(this.props.match.params.hash));
-            }} style={{color:"#108ee9"}}>{lang.e().page.txDetail.goto}</a></p>
+            {/*<p className="transfer-detail-p"><a onClick={()=>{*/}
+            {/*    url.goPage(url.browser(`https://explorer.sero.cash/txsInfo.html?hash=${txInfo.BlockHash}`), url.transferDetail(this.props.match.params.hash));*/}
+            {/*}} style={{color:"#108ee9"}}>{lang.e().page.txDetail.goto}</a></p>*/}
         </div>
     }
 }
