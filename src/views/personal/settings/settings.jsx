@@ -22,7 +22,7 @@ class Settings extends Component {
                     id: "1",
                     network: "main",
                     name: lang.e().page.setting.enNode,
-                    rpc: "http://13.124.240.238:8545",
+                    rpc: "https://node.dece.cash",
                 }
             ]
         })

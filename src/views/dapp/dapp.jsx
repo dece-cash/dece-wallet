@@ -31,18 +31,18 @@ class DApp extends Component {
     }
 
     componentDidMount() {
-
-        if(config.isZH()){
-            this.setState({
-                data:versionControlDataCn,
-                popupData:popupDataCn
-            })
-        }else{
-            this.setState({
-                data:versionControlDataEn,
-                popupData:popupDataEn
-            })
-        }
+        //
+        // if(config.isZH()){
+        //     this.setState({
+        //         data:versionControlDataCn,
+        //         popupData:popupDataCn
+        //     })
+        // }else{
+        //     this.setState({
+        //         data:versionControlDataEn,
+        //         popupData:popupDataEn
+        //     })
+        // }
 
         this.clearState();
 
@@ -155,7 +155,7 @@ class DApp extends Component {
             </div>
 
             <div style={{padding:'45px 0 60px',overflow:'scroll'}} >
-                {/*<div className="sub-title text-primary">{lang.e().page.dapp.popup} </div>*/}
+                <div className="sub-title text-primary">{lang.e().page.dapp.popup} </div>
                 <div style={{textAlign: 'center'}}>
                     <Grid data={popupData} activeStyle={false}  onClick={
                         (e,index)=>{
@@ -207,7 +207,7 @@ class DApp extends Component {
                     <List.Item key={"1"}>
                         <p className="popup-list">{lang.e().modal.dappTip2}<a onClick={()=>{this.read()}}>{lang.e().modal.dappTip3}</a>{lang.e().modal.dappTip4}</p>
                         <AgreeItem data-seed="logId" defaultChecked={read} onChange={e => this.visitDApp(!e.target.checked)}>
-                            <span className="text-dark">{lang.e().modal.haveRead}</span>
+                            {lang.e().modal.haveRead}
                         </AgreeItem>
                     </List.Item>
 

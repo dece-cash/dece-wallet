@@ -515,9 +515,9 @@ class Browser extends Component {
     };
 
     dataList = [
-        {method:'share', icon:<Icon type={"iconshare"}/>, title: lang.e().button.share },
-        {method:'copy', icon:<Icon type={"iconcopy"}/>, title: lang.e().button.copyLink },
-        {method:'fresh', icon:<Icon type={"iconrefresh"}/>, title: lang.e().button.refresh },
+        {method:'share', icon:<Icon type={"iconshare"} style={{color:"#fff"}}/>, title: lang.e().button.share },
+        {method:'copy', icon:<Icon type={"iconcopy"} style={{color:"#fff"}}/>, title: lang.e().button.copyLink },
+        {method:'fresh', icon:<Icon type={"iconrefresh"} style={{color:"#fff"}}/>, title: lang.e().button.refresh },
     ];
 
     share = (_url)=>{

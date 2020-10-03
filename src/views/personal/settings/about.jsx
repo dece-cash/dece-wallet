@@ -6,19 +6,20 @@ import './about.css'
 import WhiteSpace from "antd-mobile/es/white-space";
 
 const urls = [
-    {
-        name: "Website",
-        value: "",
-        url: ""
-    }, {
-        name: "GitHub",
-        value: "",
-        url: ""
-    }, {
-        name: "Twitter",
-        value: "",
-        url: ""
-    }
+    // {
+    //     name: "Website",
+    //     value: "",
+    //     url: ""
+    // },
+    // {
+    //     name: "GitHub",
+    //     value: "",
+    //     url: ""
+    // }, {
+    //     name: "Twitter",
+    //     value: "",
+    //     url: ""
+    // }
     ]
 
 class AboutUs extends Component {
