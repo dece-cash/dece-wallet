@@ -18,7 +18,7 @@ class Config {
         this.host = {
             host: "http://popup.sero.cash/#/",
             // rpc: "http://sero-light-node.ririniannian.com:8545",
-            rpc: "https://node.dece.cash",
+            rpc: "https://node-prod.dece.cash",
             price: "",
 
         }
@@ -51,7 +51,7 @@ class Config {
         if (seroRpcHost) {
             this.host.rpc = seroRpcHost;
         }else{
-            this.host.rpc = "https://node.dece.cash"
+            this.host.rpc = "https://node-prod.dece.cash"
         }
 
     }

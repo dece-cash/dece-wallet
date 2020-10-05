@@ -21,7 +21,12 @@ class Settings extends Component {
                 {
                     id: "1",
                     network: "main",
-                    name: lang.e().page.setting.enNode,
+                    name: "MAIN NETWORK",
+                    rpc: "https://node-prod.dece.cash",
+                },{
+                    id: "2",
+                    network: "test",
+                    name: "TEST NETWORK",
                     rpc: "https://node.dece.cash",
                 }
             ]
