@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.ab3ddf8d.chunk.css",
-    "main.js": "./static/js/main.6ca9b7f3.chunk.js",
+    "main.js": "./static/js/main.46252880.chunk.js",
     "runtime~main.js": "./static/js/runtime~main.4f935c0f.js",
     "static/css/2.1ee1962e.chunk.css": "./static/css/2.1ee1962e.chunk.css",
     "static/js/2.6c6fc56e.chunk.js": "./static/js/2.6c6fc56e.chunk.js",
     "index.html": "./index.html",
-    "precache-manifest.991566afe82015c930d2ba7aef7b2a20.js": "./precache-manifest.991566afe82015c930d2ba7aef7b2a20.js",
+    "precache-manifest.3a38a12aae7328a1797a38a6c946fd65.js": "./precache-manifest.3a38a12aae7328a1797a38a6c946fd65.js",
     "service-worker.js": "./service-worker.js",
     "static/js/0.d5dfb838.chunk.worker.js": "./static/js/0.d5dfb838.chunk.worker.js",
-    "static/js/1.98f4f9cd.chunk.worker.js": "./static/js/1.98f4f9cd.chunk.worker.js",
+    "static/js/1.8a1f80f7.chunk.worker.js": "./static/js/1.8a1f80f7.chunk.worker.js",
     "static/media/HAPY.png": "./static/media/HAPY.f7229625.png",
     "static/media/dapp.png": "./static/media/dapp.35dc11b3.png",
     "static/media/dapp_b.png": "./static/media/dapp_b.dfa68cba.png",
