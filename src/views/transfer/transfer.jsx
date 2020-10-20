@@ -262,7 +262,7 @@ class Form extends Component {
                                     <span style={{
                                         fontSize: '14px',
                                         fontWeight: "bold"
-                                    }}>{this.state.total}</span> {this.props.cy}
+                                    }}>{new BigNumber(this.state.total).toNumber().toLocaleString()}</span> {this.props.cy}
                                     <br/><span style={{
                                     fontSize: '14px',
                                     fontWeight: "bold"
