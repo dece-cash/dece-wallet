@@ -17,7 +17,10 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.amountDecorator = this.props.form.getFieldDecorator('amount', {
-            rules: [{required: true}],
+            rules: [{
+                type:"string",
+                required: true
+            }]
         });
         this.addressDecorator = this.props.form.getFieldDecorator('address', {
             rules: [{required: true}],
@@ -254,7 +257,7 @@ class Form extends Component {
                                     <span style={{
                                         fontSize: '14px',
                                         fontWeight: "bold"
-                                    }}>{new BigNumber(this.state.total).plus(new BigNumber(defaultFee)).toString(10)}</span> {this.props.cy}
+                                    }}>{new BigNumber(this.state.total).plus(new BigNumber(defaultFee)).toNumber().toLocaleString()}</span> {this.props.cy}
                                 </div> : <div>
                                     <span style={{
                                         fontSize: '14px',
