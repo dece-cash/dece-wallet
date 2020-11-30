@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ab3ddf8d.chunk.css",
+    "main.js": "./static/js/main.ee537c47.chunk.js",
+    "runtime~main.js": "./static/js/runtime~main.4f935c0f.js",
+    "static/css/2.1ee1962e.chunk.css": "./static/css/2.1ee1962e.chunk.css",
+    "static/js/2.6c6fc56e.chunk.js": "./static/js/2.6c6fc56e.chunk.js",
+    "index.html": "./index.html",
+    "precache-manifest.8672711beb5b68d7cc8da436e6bdd348.js": "./precache-manifest.8672711beb5b68d7cc8da436e6bdd348.js",
+    "service-worker.js": "./service-worker.js",
+    "static/js/0.d5dfb838.chunk.worker.js": "./static/js/0.d5dfb838.chunk.worker.js",
+    "static/js/1.8a1f80f7.chunk.worker.js": "./static/js/1.8a1f80f7.chunk.worker.js",
+    "static/media/HAPY.png": "./static/media/HAPY.f7229625.png",
+    "static/media/dapp.png": "./static/media/dapp.35dc11b3.png",
+    "static/media/dapp_b.png": "./static/media/dapp_b.dfa68cba.png",
+    "static/media/logo.png": "./static/media/logo.facc0295.png",
+    "static/media/person.png": "./static/media/person.8ba321df.png",
+    "static/media/person_b.png": "./static/media/person_b.0a436fc8.png",
+    "static/media/sero.png": "./static/media/sero.facc0295.png"
+  }
+}
