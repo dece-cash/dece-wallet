@@ -3,8 +3,8 @@
     "id" : "cash.dece.wallet",
     "name" : "DECE",
     "version" : {
-        "name" : "1.0.8",
-        "code" : 5
+        "name" : "1.0.9",
+        "code" : 6
     },
     "description" : "",
     "icons" : {
