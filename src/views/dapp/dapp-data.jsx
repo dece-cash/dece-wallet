@@ -8,9 +8,9 @@ const popupDataEn = [
         url: "https://dece-cash.github.io/worldshare",
     },
     {
-        icon: <div className="dapp-icon"><img src="https://13.124.240.238/logo.png" className="dapp-img" /></div>,
+        icon: <div className="dapp-icon"><img src="https://ginkgobank.dece.cash/logo.png" className="dapp-img" /></div>,
         text: `HBank`,
-        url: "https://13.124.240.238/index.html#/",
+        url: "https://ginkgobank.dece.cash/index.html#/",
     }
 ]
 
