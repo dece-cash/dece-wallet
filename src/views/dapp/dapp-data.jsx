@@ -9,7 +9,7 @@ const popupDataEn = [
     },
     {
         icon: <div className="dapp-icon"><img src="https://ginkgobank.dece.cash/logo.png" className="dapp-img" /></div>,
-        text: `HBank`,
+        text: `GINKGO BANK`,
         url: "https://ginkgobank.dece.cash/index.html#/",
     }
 ]
