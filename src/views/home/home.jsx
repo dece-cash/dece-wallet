@@ -12,7 +12,7 @@ import BigNumber from "bignumber.js";
 import {Price} from '../../components/tx/price';
 import {decimals} from "../../components/tx/decimals";
 import {assetService} from "../../components/service/service";
-import {HAPY,DHAPY,browser,dapp,dece,dkrw,finple,person,sero} from '../../icons/index';
+import {HAPY,DHAPY,DFINPLE,browser,dapp,dece,dkrw,finple,person,sero} from '../../icons/index';
 
 // import VERYBOOM from '../../icons/VERYBOOM.png';
 
@@ -251,6 +251,8 @@ class Home extends Component {
             return HAPY
         }else if(cy === "DHAPY"){
             return DHAPY
+        }else if(cy === "DFINPLE"){
+            return DFINPLE
         }else if(cy === "DKRW"){
             return dkrw
         }else if(cy === "FINPLE"){
