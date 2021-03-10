@@ -13,5 +13,5 @@ import sero from './sero.png'
 
 
 export {
-    shares,dapp,dece,dkrw,finple,HAPY,person,sero,sharesB,dappB,personB
+    shares,dapp,dece,dkrw,finple,HAPY,DHAPY,person,sero,sharesB,dappB,personB
 }

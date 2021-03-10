@@ -250,7 +250,7 @@ class Home extends Component {
         }else if(cy === "HAPY"){
             return HAPY
         }else if(cy === "DHAPY"){
-            return HAPY
+            return DHAPY
         }else if(cy === "DKRW"){
             return dkrw
         }else if(cy === "FINPLE"){
