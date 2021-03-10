@@ -27,7 +27,7 @@ class Settings extends Component {
                     id: "2",
                     network: "test",
                     name: "TEST NETWORK",
-                    rpc: "https://node.dece.cash",
+                    rpc: "https node.dece.cash",
                 }
             ]
         })
