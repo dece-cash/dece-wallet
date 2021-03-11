@@ -38,7 +38,7 @@
     "jest-environment-jsdom-fourteen": "0.1.0",
     "jest-resolve": "24.8.0",
     "jest-watch-typeahead": "0.3.1",
-    "popup-service": "git://github.com/sero-cash/popup-service",
+    "popup-service": "file:../dece-service",
     "jsuperzk": "file:../jsuperzk",
     "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
