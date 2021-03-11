@@ -23,11 +23,6 @@ class Settings extends Component {
                     network: "main",
                     name: "MAIN NETWORK",
                     rpc: "https://node-prod.dece.cash",
-                },{
-                    id: "2",
-                    network: "test",
-                    name: "TEST NETWORK",
-                    rpc: "https://node.dece.cash",
                 }
             ]
         })
@@ -158,7 +153,6 @@ class Settings extends Component {
                             url.goPage(url.HistoryPKr, url.Settings)
                         }}><span >{lang.e().page.setting.pkr}</span></List.Item>
 
-
                     </List>
                     <WhiteSpace/>
                     <List>
@@ -190,7 +184,6 @@ class Settings extends Component {
                     <WingBlank>
                         <List renderHeader={() => <div>{lang.e().page.setting.node}</div>} className="popup-list">
                             {network.map((v, index) => (
-
                                 <div>
                                     <List.Item key={index} onClick={() => {
                                         this.setRpc(v.rpc, v.name);
