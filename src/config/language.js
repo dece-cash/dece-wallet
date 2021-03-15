@@ -1014,9 +1014,8 @@ class Language {
     };
 
     ko_KR = {
-
         key: "ko_KR",
-        value: "언어",
+        value: "한국어",
 
         button: {
             confirm: "확인",
@@ -1035,16 +1034,16 @@ class Language {
             ok: "OK",
             openTip: "10 월 31 일 오픈",
             update: "업데이트",
-            repair: "수리 데이터",
+            repair: "데이터 복원",
             share: "공유",
             copyLink: "링크 복사",
             refresh: "새로 고침",
         },
 
         navbar: {
-            wallet: "지갑",
+            wallet: "자산",
             dapp: "DApp",
-            my: "내",
+            my: "내정보",
         },
 
         toast: {
@@ -1230,7 +1229,7 @@ class Language {
                 termOfUse: "서비스 약관",
                 about: "우리에 대해",
                 help: "자주하는 질문",
-                clear: "명확한 앱 데이터",
+                clear: "메모리 정리",
                 address: {
                     name: "이름",
                     address: "주소",
@@ -1250,8 +1249,8 @@ class Language {
             dapp:{
                 search:"DApp URL 입력",
                 invalidDApp:"잘못된 DApp URL",
-                recent:"충적세",
-                popup:"제안 됨",
+                recent:"최근 기록",
+                popup:"추천",
                 recommended: "커뮤니티 투표 DApps",
             }
         }
