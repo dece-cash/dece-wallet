@@ -11,8 +11,9 @@ import FPT from './FPT.png'
 import person from './person.png'
 import personB from './person_b.png'
 import sero from './sero.png'
+import PFID from './PFID.png'
 
 
 export {
-    shares,dapp,dece,dkrw,finple,HAPY,DHAPY,FPT,person,sero,sharesB,dappB,personB
+    shares,dapp,dece,dkrw,finple,HAPY,DHAPY,FPT,person,sero,sharesB,dappB,personB,PFID
 }
