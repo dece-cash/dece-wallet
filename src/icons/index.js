@@ -12,8 +12,9 @@ import person from './person.png'
 import personB from './person_b.png'
 import sero from './sero.png'
 import PFID from './PFID.png'
+import PUNIT from './PUNIT.png'
 
 
 export {
-    shares,dapp,dece,dkrw,finple,HAPY,DHAPY,FPT,person,sero,sharesB,dappB,personB,PFID
+    shares,dapp,dece,dkrw,finple,HAPY,DHAPY,FPT,person,sero,sharesB,dappB,personB,PFID,PUNIT
 }

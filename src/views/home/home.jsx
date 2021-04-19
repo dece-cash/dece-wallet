@@ -12,7 +12,7 @@ import BigNumber from "bignumber.js";
 import { Price } from '../../components/tx/price';
 import { decimals } from "../../components/tx/decimals";
 import { assetService } from "../../components/service/service";
-import { HAPY, DHAPY, FPT, browser, dapp, dece, dkrw, finple, person, sero, PFID } from '../../icons/index';
+import { HAPY, DHAPY, FPT, browser, dapp, dece, dkrw, finple, person, sero, PFID,PUNIT } from '../../icons/index';
 
 // import VERYBOOM from '../../icons/VERYBOOM.png';
 
@@ -259,7 +259,10 @@ class Home extends Component {
             return finple
         } else if (cy === "PFID") {
             return PFID
+        }else if (cy === "PUNIT") {
+            return PUNIT
         }
+        
         return logo
     }
 
