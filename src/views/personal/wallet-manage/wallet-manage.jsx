@@ -76,7 +76,7 @@ class WalletManager extends Component {
                                     url.goPage(url.receive(detail.address,"mainPKr"), url.WalletManager)
                                 }}/>
                             </div>
-                            <div>
+                            {/* <div>
                                 <span style={{color:"#fff"}}>
                                     <Icon type="iconhelp" className="icon-pkr" onClick={()=>{that.modalTips(lang.e().modal.pkr)}}
                                     />{lang.e().page.walletManage.PKr}:</span>
@@ -84,11 +84,9 @@ class WalletManager extends Component {
                                 <Icon type="iconqr-code" className="icon-qrcode" onClick={()=>{
                                     url.goPage(url.receive(detail.address,"pkr"), url.WalletManager)
                                 }}/>
-                            </div>
+                            </div> */}
                         </Card.Body>
                     </Card>
-
-
                 </WingBlank>
             )
         }
@@ -101,7 +99,6 @@ class WalletManager extends Component {
         that.setState({
             accountHtml:tmpArray
         })
-
     }
 
     render() {
@@ -112,8 +109,6 @@ class WalletManager extends Component {
                     style={{background: "#294486"}}
                     leftContent={<Icon type="left"/>}
                     rightContent={<Icon onClick={()=>{
-                        // window.location.replace("/#/account/create1")
-
                         Modal.operation([{
                             text:<span style={{textAlign:'center',fontWeight:'800'}}>{lang.e().modal.createWallet}</span>,
                             onPress:()=>{
@@ -133,7 +128,6 @@ class WalletManager extends Component {
                 >
                     {lang.e().page.my.walletManage}
                 </NavBar>
-
             </div>
             <WhiteSpace size="lg"/>
             <div style={{marginTop:"45px",height:"100%",overflowY:'scroll'}}>

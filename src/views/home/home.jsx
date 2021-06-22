@@ -474,11 +474,10 @@ class Home extends Component {
                                     />{lang.e().page.wallet.mainPKr}: </span>
                                 <span> {utils.ellipsisAddress(mainPKr)}</span>
                                 <Icon type="iconqr-code" className="icon-qrcode" onClick={() => {
-                                    // this.showQrCode(mainPKr)
                                     url.goPage(url.receive(current.address, "mainPKr"), url.Home);
                                 }} />
                             </div>
-                            <div>
+                            {/* <div>
                                 <span style={{ color: "#fff" }}>
                                     <Icon type="iconhelp" className="icon-pkr" onClick={() => {
                                         this.modalTips(lang.e().modal.pkr)
@@ -486,10 +485,9 @@ class Home extends Component {
                                     />{lang.e().page.wallet.PKr}: </span>
                                 <span> {utils.ellipsisAddress(currentPKr)}</span>
                                 <Icon type="iconqr-code" className="icon-qrcode" onClick={() => {
-                                    // this.showQrCode(currentPKr)
                                     url.goPage(url.receive(current.address, "pkr"), url.Home);
                                 }} />
-                            </div>
+                            </div> */}
                         </Card.Body>
                         {/*<Card.Footer extra={<span>{that.state.seroPriceInfo.type}{new BigNumber(seroTotal).toFixed(3)}</span>}/>*/}
                         <Card.Footer extra={<span>
@@ -499,6 +497,7 @@ class Home extends Component {
                             }} />
                         </span>} />
                     </Card>
+                    
                 </div>
 
                 <div className="am-list">
